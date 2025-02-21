@@ -6,10 +6,12 @@ function star(event) {
         img.src == "https://img.icons8.com/?size=256w&id=104&format=png"
     }
 }
-function cart(event){
-    alert("ADDED SUCCESSFULLY !!")
-    var r=event.target.parentElement
-    var x=document.createElement("div")
-    var a=document.getElementsByTagName("f")
-    a.append(x)
-}
+let cartTotal = 0; 
+function cart(event) {
+    alert("ADDED SUCESSFULLY !!")
+    let button = event.target; 
+    let priceElement = button.previousElementSibling; 
+    let price = parseFloat(priceElement.textContent.replace('$', '')); 
+    cartTotal += price; 
+    document.getElementById("cart-total").textContent = cartTotal.toFixed(2); }
+ 
