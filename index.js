@@ -3,7 +3,7 @@ function star(event) {
     if (img.src == "https://img.icons8.com/?size=256w&id=104&format=png") {
         img.src = "https://img.icons8.com/?size=256w&id=qdQpy48X3Rjv&format=png";
     } else{
-        img.src == "https://img.icons8.com/?size=256w&id=104&format=png"
+        img.src = "https://img.icons8.com/?size=256w&id=104&format=png"
     }
 }
 let cartTotal = 0; 
